@@ -20,8 +20,8 @@ const projects = [
   },
   {
     image: '/Vi Preview.png',
-    title: 'Elixpo VI - Video to Text {"UNDER CONSTRUCTION"}',
-    tags: ['Html', 'Css', 'JavaScript', 'Python', 'MongoDB', 'Contributing as Frontend'],
+    title: 'Elixpo VI - Video to Text',
+    tags: ['Html', 'Css', 'JavaScript', 'Python', 'MongoDB', 'Contributing as Frontend','Under Construction'],
     // Add URL here
   },
 ];
