@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="absolute top-40 left-40 w-96 h-96 bg-pink-500/30 rounded-full blur-3xl" />
         <div className="absolute bottom-40 right-20 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl" />
       </div>
-      <div className="max-w-7xl mx-auto px-4 text-center">
+      <div className="max-w-7xl mx-auto px-4 text-center animate__animated animate__fadeIn animate__delay-0.9s">
         <div className="relative z-10 max-w-3xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
             <span className="text-pink-500">Digital Designer</span>

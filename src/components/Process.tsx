@@ -28,7 +28,7 @@ export default function Process() {
         <div className="absolute top-40 right-20 w-96 h-96 bg-pink-500/30 rounded-full blur-3xl" />
         <div className="absolute bottom-40 left-20 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl" />
       </div>
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-1 gap-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-1 gap-12 relative z-10 animate__animated animate__fadeIn animate__delay-0.9s">
         <div className="text-center">
           <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight">
             My process to help<br />

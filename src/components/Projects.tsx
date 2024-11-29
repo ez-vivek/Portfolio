@@ -33,7 +33,7 @@ export default function Projects() {
         <div className="absolute top-40 left-80 w-96 h-96 bg-pink-500/30 rounded-full blur-3xl" />
         <div className="absolute bottom-10 right-40 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl" />
       </div>
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 relative z-10 animate__animated animate__fadeIn animate__delay-0.9s">
         <h2 className="text-4xl text-center md:text-5xl font-bold mb-8">
           Selected <span className="text-pink-500">Projects</span>
         </h2>
