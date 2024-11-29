@@ -54,10 +54,6 @@ Follow these instructions to set up and run the project locally.
    ```bash
    npm install
    ```  
-   
-## 🛡️ License  
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.  
 
 ## ✨ Acknowledgments  
 
