@@ -40,7 +40,7 @@ export default function Projects() {
         <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
           Over the years, I've partnered with startups of all sizes and various stages to create some truly unique products. Here are a few that I feel were the most challenging yet rewarding.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {projects.map((project, index) => (
             <a
               href={project.url}
