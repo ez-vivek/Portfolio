@@ -1,28 +1,28 @@
 import { ArrowRight } from 'lucide-react';
 const projects = [
   {
-    image: 'https://images.unsplash.com/photo-1488730792340-bdc88feffb98?q=80&w=1440&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    title: 'Masterbase Webdesign',
-    tags: ['Html', 'Css', 'JavaScript', 'Animations'],
-    url: 'https://github.com', // Add URL here
+    image: 'public/Inkflow Preview.png',
+    title: 'Dev Workify - Collaborative Workspace',
+    tags: ['Html', 'Css', 'JavaScript', 'Animations','Tools','Workspace'],
+    url: 'https://ez-vivek.github.io/DevWorkify/', // Add URL here
   },
   {
-    image: 'https://images.unsplash.com/photo-1635322966219-b75ed372eb01?auto=format&fit=crop&q=80',
-    title: 'Space Webflow Template',
-    tags: ['Html', 'Css', 'JavaScript', 'Animations'],
-    url: 'https://example.com/space-template', // Add URL here
+    image: 'public/Apple Preview.png',
+    title: 'Apple Vision Pro - 3d Animation Model',
+    tags: ['Html', 'Css', 'JavaScript','Gsap','Animations','3D'],
+    url: 'https://ez-vivek.github.io/Vision-Pro-3D-Animation/', // Add URL here
   },
   {
-    image: 'https://images.unsplash.com/photo-1488730792340-bdc88feffb98?q=80&w=1440&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    title: 'Masterbase Webdesign',
-    tags: ['Html', 'Css', 'JavaScript', 'Animations'],
-    url: 'https://example.com/masterbase', // Add URL here
+    image: 'public/Elixpo Preview.png',
+    title: 'Elixpo AI - Text to Image Generator',
+    tags: ['Html', 'Css', 'JavaScript','python','Firebase', 'Contributed as Frontend'],
+    url: 'https://circuit-overtime.github.io/Elixpo_ai_pollinations/log_in_out.html', // Add URL here
   },
   {
-    image: 'https://images.unsplash.com/photo-1635322966219-b75ed372eb01?auto=format&fit=crop&q=80',
-    title: 'Space Webflow Template',
-    tags: ['Html', 'Css', 'JavaScript', 'Animations'],
-    url: 'https://example.com/space-template', // Add URL here
+    image: 'public/Vi Preview.png',
+    title: 'Elixpo VI - Video to Text {"UNDER CONSTRUCTION"}',
+    tags: ['Html', 'Css', 'JavaScript','Python','firebase','Contributed as Frontend'],
+    url: '#', // Add URL here
   },
 ];
 
