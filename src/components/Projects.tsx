@@ -3,26 +3,26 @@ const projects = [
   {
     image: '/Workify.png',
     title: 'Dev Workify - Collaborative Workspace',
-    tags: ['Html', 'Css', 'JavaScript', 'Animations','Tools','Workspace'],
+    tags: ['Html', 'Css', 'JavaScript', 'Animations', 'Tools', 'Workspace'],
     url: 'https://ez-vivek.github.io/DevWorkify/',
   },
   {
     image: '/Apple Preview.png',
     title: 'Apple Vision Pro - 3d Animation Model',
-    tags: ['Html', 'Css', 'JavaScript','Gsap','Animations','3D'],
+    tags: ['Html', 'Css', 'JavaScript', 'Gsap', 'Animations', '3D'],
     url: 'https://ez-vivek.github.io/Vision-Pro-3D-Animation/',
   },
   {
     image: '/Elixpo Preview.png',
     title: 'Elixpo AI - Text to Image Generator',
-    tags: ['Html', 'Css', 'JavaScript','python','Firebase', 'Contributed as Frontend'],
+    tags: ['Html', 'Css', 'JavaScript', 'python', 'Firebase', 'Contributed as Frontend'],
     url: 'https://circuit-overtime.github.io/Elixpo_ai_pollinations/log_in_out.html',
   },
   {
     image: '/Vi Preview.png',
     title: 'Elixpo VI - Video to Text {"UNDER CONSTRUCTION"}',
-    tags: ['Html', 'Css', 'JavaScript','Python','MongoDB','Contributing as Frontend'],
-     // Add URL here
+    tags: ['Html', 'Css', 'JavaScript', 'Python', 'MongoDB', 'Contributing as Frontend'],
+    // Add URL here
   },
 ];
 
