@@ -1,8 +1,3 @@
-<img src="Image/preview.png">
-Here’s a sample README file for your personal portfolio project using React and Tailwind CSS:
-
----
-
 # Personal Portfolio Website 🌟  
 
 A modern and responsive personal portfolio built with **React** and **Tailwind CSS**, showcasing my skills, projects, and experience.
@@ -38,10 +33,6 @@ A modern and responsive personal portfolio built with **React** and **Tailwind C
 └── README.md        // Documentation file (you’re here!)
 ```
 
-## 📸 Demo  
-
-Check out the live demo here: [Your Live Portfolio Link](#)  
-
 ## 🧑‍💻 Getting Started  
 
 Follow these instructions to set up and run the project locally.  
@@ -55,7 +46,7 @@ Follow these instructions to set up and run the project locally.
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/your-username/portfolio.git
+   git clone https://github.com/ez.vivek/PersonalWebsite.git
    cd portfolio
    ```  
 
@@ -63,20 +54,7 @@ Follow these instructions to set up and run the project locally.
    ```bash
    npm install
    ```  
-
-3. **Run the development server**  
-   ```bash
-   npm run dev
-   ```  
-   Open `http://localhost:5173` in your browser to see the site.
-
-### Build for Production  
-
-To create an optimized build for deployment, run:  
-```bash
-npm run build
-```  
-
+   
 ## 🛡️ License  
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.  
