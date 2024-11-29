@@ -21,7 +21,7 @@ const projects = [
   {
     image: 'public/Vi Preview.png',
     title: 'Elixpo VI - Video to Text {"UNDER CONSTRUCTION"}',
-    tags: ['Html', 'Css', 'JavaScript','Python','firebase','Contributed as Frontend'],
+    tags: ['Html', 'Css', 'JavaScript','Python','firebase','Contributing as Frontend'],
     url: '#', // Add URL here
   },
 ];
