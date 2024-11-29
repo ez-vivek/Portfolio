@@ -26,7 +26,6 @@ export default function Hero() {
           {/* Scrolling Icons Section */}
           <div className="mt-8 overflow-hidden ml-10 mr-10">
             <div className="flex animate-marquee gap-8 text-4xl text-white mx-auto">
-              {/* Duplicated icons to create a seamless loop */}
               <div className="flex gap-8">
                 <FaHtml5 className="hover:text-pink-500" />
                 <FaCss3Alt className="hover:text-blue-500" />
@@ -42,8 +41,6 @@ export default function Hero() {
                 <FaAws className="hover:text-orange-500" />
                 <FaFigma className="hover:text-purple-500" />
               </div>
-
-              {/* Duplicated icons */}
               <div className="flex gap-8">
                 <FaHtml5 className="hover:text-pink-500" />
                 <FaCss3Alt className="hover:text-blue-500" />
