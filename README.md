@@ -1,4 +1,8 @@
+<img src="/public/Portfolio Preview.png">
+
+
 # Personal Portfolio Website 🌟  
+
 
 A modern and responsive personal portfolio built with **React** and **Tailwind CSS**, showcasing my skills, projects, and experience.
 
