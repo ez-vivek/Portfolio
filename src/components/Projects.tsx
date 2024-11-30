@@ -28,13 +28,13 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="py-10 bottom-10 bg-black relative overflow-hidden">
+    <div className="py-20 bg-black relative overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute top-40 left-80 w-96 h-96 bg-pink-500/30 rounded-full blur-3xl" />
-        <div className="absolute bottom-10 right-40 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl" />
+        <div className="absolute top-40 left-80 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-10 right-40 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl" />
       </div>
       <div className="max-w-7xl mx-auto px-4 relative z-10 animate__animated animate__fadeIn animate__delay-0.9s">
-        <h2 className="text-4xl text-center md:text-5xl font-bold mb-8">
+        <h2 className="text-4xl text-center md:text-6xl font-bold mb-8">
           Selected <span className="text-pink-500">Projects</span>
         </h2>
         <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">

@@ -24,17 +24,17 @@ const steps = [
 
 export default function Process() {
   return (
-    <div className="py-10 bottom-10 bg-black relative overflow-hidden">
+    <div className="py-20 bg-black relative overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute top-40 right-20 w-96 h-96 bg-pink-500/30 rounded-full blur-3xl" />
-        <div className="absolute bottom-40 left-20 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl" />
+        <div className="absolute top-40 right-20 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-40 left-20 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl" />
       </div>
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-1 gap-12 relative z-10 animate__animated animate__fadeIn animate__delay-0.9s">
         <div className="text-center">
           <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight">
             My process to help<br />
             Clints
-            <span className="text-pink-500"> 2x their revnue</span>
+            <span className="text-pink-500"> 2x their <span className="text-blue-500"> revnue</span></span>
           </h2>
           <p className="mt-6 text-gray-400 max-w-2xl mx-auto">
             "With over 4 years of experience in the design industry, I’ve refined this process to perfection. That’s why you can trust it completely to deliver exceptional results tailored to your needs."
