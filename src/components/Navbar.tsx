@@ -10,16 +10,16 @@ export default function Navbar() {
                     <a href="https://github.com/ez-vivek" target="_blank" className="text-white hover:text-gray-400 transition-colors">
                         <i className="bi bi-github text-2xl"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/ezvivek"target="_blank" className="text-white hover:text-gray-400 transition-colors">
+                    <a href="https://www.linkedin.com/in/ezvivek"target="_blank" className="text-white hover:text-blue-400 transition-colors">
                         <i className="bi bi-linkedin text-2xl"></i>
                     </a>
-                    <a href="https://www.instagram.com/ez.vivek"target="_blank" className="text-white hover:text-gray-400 transition-colors">
+                    <a href="https://www.instagram.com/ez.vivek"target="_blank" className="text-white hover:text-red-400 transition-colors">
                         <i className="bi bi-instagram text-2xl"></i>
                     </a>
                     <a href="https://x.com/ez_vivek"target="_blank" className="text-white hover:text-gray-400 transition-colors">
                         <i className="bi bi-twitter-x text-2xl"></i>
                     </a>
-                    <a href="mailto:vivektalent200@gmail.com" className="text-white hover:text-gray-400 transition-colors">
+                    <a href="mailto:vivektalent200@gmail.com" className="text-white hover:text-yellow-400 transition-colors">
                         <i className="bi bi-envelope text-2xl"></i>
                     </a>
                 </div>
