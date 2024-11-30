@@ -12,7 +12,7 @@ export default function Hero() {
       </div>
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 text-center animate__animated animate__fadeIn animate__delay-0.9s">
         <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6">
-          <h1 className="text-4xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+          <h1 className="text-center justify-center text-4xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
             <span className="text-pink-500">Digital Designer</span>
             <br />
             <span className="text-white whitespace-nowrap">crafting products that</span>
