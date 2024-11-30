@@ -37,12 +37,13 @@ export default function Navbar() {
                     className="relative px-8 py-3 bg-black rounded-full backdrop-blur-lg shadow-lg"
                     style={{
                         boxShadow: `
-                            0 0 1px 1px rgba(236, 72, 153, 0.5), 
-                            0 0 1px 1px rgba(168, 85, 247, 0.5),
-                            0 0 1px 1px rgba(236, 72, 153, 0.3),
-                            0 0 1px 1px rgba(168, 85, 247, 0.3)
+                            0 0 0.5px 0.5px rgba(236, 72, 153, 0.3),
+                            0 0 0.5px 0.5px rgba(168, 85, 247, 0.3),
+                            0 0 0.5px 0.5px rgba(0, 123, 255, 0.5),
+                            0 0 0.5px 0.5px rgba(255, 105, 180, 0.5)
                         `
                     }}
+                    
                 >
                     <div className="flex justify-center items-center gap-6">
                         <a href="https://github.com/ez-vivek" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">
