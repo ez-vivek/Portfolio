@@ -2,23 +2,24 @@ const steps = [
   {
     number: '1',
     title: 'Discover your problem',
-    description: 'Leverage agile frameworks to provide a robust synopsis for high level overviews.'
+    description: 'Identify the core challenges by conducting in-depth analysis and brainstorming sessions. Understand the root cause to formulate actionable insights that drive meaningful solutions tailored to your unique needs.'
   },
   {
     number: '2',
-    title: 'Competative market research',
-    description: 'Leverage agile frameworks to provide a robust synopsis for high level overviews.'
+    title: 'Competitive market research',
+    description: 'Analyze the market landscape to uncover trends, strategies, and opportunities. Benchmark against competitors to ensure a data-driven approach for crafting innovative solutions that set you apart and drive success.'
   },
   {
     number: '3',
-    title: 'User centric design',
-    description: 'Leverage agile frameworks to provide a robust synopsis for high level overviews.'
+    title: 'User-centric design',
+    description: 'Focus on creating intuitive, engaging, and functional designs that prioritize user experience. Incorporate feedback loops and usability testing to refine and deliver solutions that resonate with your audience effectively.'
   },
   {
     number: '4',
     title: 'Final hand-off',
-    description: 'Leverage agile frameworks to provide a robust synopsis for high level overviews.'
+    description: 'Ensure seamless delivery of the finalized project with comprehensive documentation and support. Provide training, resources, and follow-ups to ensure successful implementation and sustained impact of the solution.'
   }
+  
 ];
 
 export default function Process() {
