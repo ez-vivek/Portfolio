@@ -13,16 +13,16 @@ const projects = [
     url: 'https://ez-vivek.github.io/Vision-Pro-3D-Animation/',
   },
   {
+    image: '/Redefine Preview.webp',
+    title: 'Redefine Gaming - Award Website',
+    tags: ['ReactJs', 'TailwindCss', 'Typescript', 'Gsap', 'Animations', 'Smooth Scrolling'],
+    url: 'https://redefineawardgamingwebsite.vercel.app',
+  },
+  {
     image: '/Elixpo Preview.png',
     title: 'Elixpo AI - Text to Image Generator',
     tags: ['Html', 'Css', 'JavaScript', 'python', 'Firebase', 'Contributed as Frontend'],
     url: 'https://circuit-overtime.github.io/Elixpo_ai_pollinations/log_in_out.html',
-  },
-  {
-    image: '/Vi Preview.png',
-    title: 'Elixpo VI - Video to Text',
-    tags: ['Html', 'Css', 'JavaScript', 'Python', 'MongoDB', 'Contributing as Frontend','Under Construction'],
-    // Add URL here
   },
 ];
 
