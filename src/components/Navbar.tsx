@@ -5,17 +5,45 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'animate.css'
 
 export default function Navbar() {
-    const [isVisible, setIsVisible] = useState(false)
+    const [isVisible, setIsVisible] = useState(true)
+    const [lastScrollY, setLastScrollY] = useState(0)
 
     useEffect(() => {
-        setIsVisible(true)
-    }, [])
+        const handleScroll = () => {
+            if (window.scrollY > lastScrollY) {
+                // Scrolling down
+                setIsVisible(false)
+            } else {
+                // Scrolling up
+                setIsVisible(true)
+            }
+            setLastScrollY(window.scrollY)
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [lastScrollY])
 
     return (
-        <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
+        <div
+            className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-20'
+                }`}
+        >
             <div className={`relative ${isVisible ? 'animate__animated animate__fadeInDown' : 'opacity-0'}`}>
                 <div className="absolute inset-0 rounded-full bg-black/30"></div>
-                <nav className="relative px-6 py-3 bg-white/10 backdrop-blur-lg rounded-full overflow-hidden shadow-lg border-2 border-transparent">
+                <nav
+                    className="relative px-8 py-3 bg-black rounded-full backdrop-blur-lg shadow-lg"
+                    style={{
+                        boxShadow: `
+                            0 0 1px 1px rgba(236, 72, 153, 0.5), 
+                            0 0 1px 1px rgba(168, 85, 247, 0.5),
+                            0 0 1px 1px rgba(236, 72, 153, 0.3),
+                            0 0 1px 1px rgba(168, 85, 247, 0.3)
+                        `
+                    }}
+                >
                     <div className="flex justify-center items-center gap-6">
                         <a href="https://github.com/ez-vivek" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">
                             <i className="bi bi-github text-xl sm:text-2xl"></i>
