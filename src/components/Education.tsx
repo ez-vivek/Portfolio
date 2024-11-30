@@ -13,21 +13,21 @@ const educationData = [
         school: "Freelancer",
         duration: "2022 - Now",
         location: "West Bengal, INDIA",
-        description: "User focuses on digital design principles, typography, layout, color theory, visual hierarchy, and interactive media to create engaging and aesthetically pleasing user experiences across various platforms."
+        description: "Focuses on digital design principles, typography, layout, color theory, visual hierarchy, and interactive media to create engaging and aesthetically pleasing user experiences across various platforms."
     },
     {
         degree: "UI Designer",
         school: "Freelancer",
-        duration: "2023 - Now",
+        duration: "2022 - Now",
         location: "West Bengal, INDIA",
-        description: "User specializes in creating intuitive and visually appealing interfaces by leveraging principles of user-centered design, interaction design, and responsive frameworks to enhance digital experiences."
+        description: "Specializes in creating intuitive and visually appealing interfaces by leveraging principles of user-centered design, interaction design, and responsive frameworks to enhance digital experiences."
     },
     {
         degree: "Scriptwriter",
         school: "Freelancer",
-        duration: "2021 - Now",
+        duration: "2022 - Now",
         location: "West Bengal, INDIA",
-        description: "User crafts compelling narratives, develops engaging scripts for diverse media formats, and utilizes storytelling techniques to connect with audiences emotionally and intellectually."
+        description: "Crafts compelling narratives, develops engaging scripts for diverse media formats, and utilizes storytelling techniques to connect with audiences emotionally and intellectually."
     }   
 ];
 
