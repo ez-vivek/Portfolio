@@ -40,7 +40,7 @@ export default function Projects() {
         <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
           Over the years, I've partnered with startups of all sizes and various stages to create some truly unique products. Here are a few that I feel were the most challenging yet rewarding.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <a
               href={project.url}
@@ -60,7 +60,7 @@ export default function Projects() {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-[200px] object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                   <div className="flex flex-wrap gap-2 mb-3">
