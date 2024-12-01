@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { User2, Mail, DollarSign, MessageSquare, ArrowRight } from 'lucide-react';
+import { User2, Mail, DollarSign, MessageSquare, ArrowRight} from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
 
 const budgetOptions = [
@@ -38,7 +38,7 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!WEB3FORMS_ACCESS_KEY) {
@@ -147,8 +147,8 @@ export default function ContactForm() {
                 key={service.value}
                 onClick={() => handleServiceToggle(service.value)}
                 className={`px-4 py-2 rounded-lg border border-white/10 ${formData.services.includes(service.value)
-                  ? "bg-pink-500 text-white"
-                  : "bg-zinc-800 text-gray-400"
+                    ? "bg-pink-500 text-white"
+                    : "bg-zinc-800 text-gray-400"
                   }`}
               >
                 {service.label}
