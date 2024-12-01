@@ -21,7 +21,7 @@ export default function ContactForm() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!WEB3FORMS_ACCESS_KEY) {
