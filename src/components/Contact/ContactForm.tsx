@@ -34,7 +34,11 @@ export default function ContactForm() {
     try {
       const data = {
         access_key: WEB3FORMS_ACCESS_KEY,
-        ...formData
+        subject: `New message from ${formData.name}`, // Set a meaningful subject
+        from_name: formData.name, // Include sender's name
+        from_email: formData.email, // Include sender's email
+        budget: formData.budget, // Include budget
+        message: formData.message // Include message
       };
 
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -62,11 +66,12 @@ export default function ContactForm() {
     }
   };
 
+
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-md bg-zinc-900/50 backdrop-blur-xl p-8 rounded-2xl border border-white/10">
       <Toaster position="top-right" />
       <h3 className="text-xl font-semibold mb-6 text-white">FILL THE FORM BELOW*</h3>
-      
+
       <div className="space-y-6">
         {/* Name Input */}
         <div className="relative">
