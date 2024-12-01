@@ -4,7 +4,7 @@ import ContactForm from './ContactForm';
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-black relative flex items-center justify-center overflow-hidden py-32">
+    <div className="min-h-screen bg-black relative flex items-center justify-center overflow-hidden py-32 animate__animated animate__fadeIn animate__delay-0.9s">
       <GradientBackground />
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
