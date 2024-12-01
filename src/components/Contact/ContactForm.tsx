@@ -11,10 +11,10 @@ const budgetOptions = [
 ];
 
 const serviceOptions = [
-  { label: "Website", value: "web-dev" },
-  { label: "Logo", value: "logo-design" },
-  { label: "Brand", value: "brand-design" },
-  { label: "UI", value: "ui-design" }
+  { label: "Website", value: "Website Design" },
+  { label: "Logo", value: "Logo design" },
+  { label: "Brand", value: "Brand Design" },
+  { label: "UI", value: "UI Design" }
 ];
 
 const WEB3FORMS_ACCESS_KEY = "1b677c39-e3cb-4674-91b5-5e24d274e052"; // Replace with your Web3Forms access key
