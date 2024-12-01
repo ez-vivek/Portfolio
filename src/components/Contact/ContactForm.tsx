@@ -10,6 +10,13 @@ const budgetOptions = [
   "More than $50K"
 ];
 
+const serviceOptions = [
+  { label: "Website", value: "web-dev" },
+  { label: "Logo", value: "logo-design" },
+  { label: "Brand", value: "brand-design" },
+  { label: "UI", value: "ui-design" }
+];
+
 const WEB3FORMS_ACCESS_KEY = "1b677c39-e3cb-4674-91b5-5e24d274e052"; // Replace with your Web3Forms access key
 
 export default function ContactForm() {
@@ -17,11 +24,21 @@ export default function ContactForm() {
     name: '',
     email: '',
     budget: '',
-    message: ''
+    message: '',
+    services: [] // New state for services
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleServiceToggle = (value) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      services: prevState.services.includes(value)
+        ? prevState.services.filter((service) => service !== value)
+        : [...prevState.services, value]
+    }));
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!WEB3FORMS_ACCESS_KEY) {
@@ -35,10 +52,11 @@ export default function ContactForm() {
       const data = {
         access_key: WEB3FORMS_ACCESS_KEY,
         subject: `New message from ${formData.name}`, // Set a meaningful subject
-        from_name: formData.name, // Include sender's name
-        from_email: formData.email, // Include sender's email
-        budget: formData.budget, // Include budget
-        message: formData.message // Include message
+        from_name: formData.name,
+        from_email: formData.email,
+        budget: formData.budget,
+        message: formData.message,
+        services: formData.services.join(", ") // Include selected services
       };
 
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -54,7 +72,7 @@ export default function ContactForm() {
 
       if (result.success) {
         toast.success('Message sent successfully!');
-        setFormData({ name: '', email: '', budget: '', message: '' });
+        setFormData({ name: '', email: '', budget: '', message: '', services: [] });
       } else {
         throw new Error(result.message || "Failed to send message.");
       }
@@ -65,7 +83,6 @@ export default function ContactForm() {
       setIsSubmitting(false);
     }
   };
-
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-md bg-zinc-900/50 backdrop-blur-xl p-8 rounded-2xl border border-white/10">
@@ -78,7 +95,7 @@ export default function ContactForm() {
           <User2 className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
           <input
             type="text"
-            placeholder="First Name"
+            placeholder="Full Name"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             className="w-full bg-zinc-800/50 border border-white/10 rounded-lg py-3 pl-12 pr-4 text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500/50"
@@ -111,13 +128,33 @@ export default function ContactForm() {
             required
             disabled={isSubmitting}
           >
-            <option value="">Your budget</option>
+            <option value="">Choose budget range</option>
             {budgetOptions.map((option) => (
               <option key={option} value={option} className="bg-zinc-800">
                 {option}
               </option>
             ))}
           </select>
+        </div>
+
+        {/* Services Selection */}
+        <div>
+          <h4 className="text-white mb-2">Choose Design Types</h4>
+          <div className="flex flex-wrap gap-4">
+            {serviceOptions.map((service) => (
+              <button
+                type="button"
+                key={service.value}
+                onClick={() => handleServiceToggle(service.value)}
+                className={`px-4 py-2 rounded-lg border border-white/10 ${formData.services.includes(service.value)
+                  ? "bg-pink-500 text-white"
+                  : "bg-zinc-800 text-gray-400"
+                  }`}
+              >
+                {service.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Message Input */}
@@ -143,9 +180,9 @@ export default function ContactForm() {
             {isSubmitting ? 'Sending...' : 'Submit Now'}
           </span>
           <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-          <div className="absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500" />
         </button>
       </div>
     </form>
   );
 }
+
