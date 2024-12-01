@@ -27,6 +27,12 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
+      toast.error('Email service not configured properly');
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -100,7 +106,7 @@ export default function ContactForm() {
           >
             <option value="">Your budget</option>
             {budgetOptions.map((option) => (
-              <option key={option} value={option} className="bg-black">
+              <option key={option} value={option} className="bg-zinc-800">
                 {option}
               </option>
             ))}
