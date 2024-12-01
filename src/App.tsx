@@ -4,6 +4,7 @@ import Services from './components/Services';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Process from './components/Process';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Education/>
       <Projects />
       <Process />
+      <Contact/>
       <Footer />
     </div>
   );
