@@ -11,4 +11,4 @@ export default function GradientBackground() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-b from-transparent via-black/50 to-black" />
       </div>
     );
-  }
+  } 
