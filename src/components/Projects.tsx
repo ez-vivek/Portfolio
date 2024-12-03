@@ -22,7 +22,7 @@ const projects = [
     image: '/Elixpo Preview.png',
     title: 'Elixpo AI - Text to Image Generator',
     tags: ['Html', 'Css', 'JavaScript', 'python', 'Firebase', 'Contributed as Frontend'],
-    url: 'https://circuit-overtime.github.io/Elixpo_ai_pollinations/log_in_out.html',
+    url: 'https://circuit-overtime.github.io/Elixpo_ai_pollinations/src/auth/',
   },
 ];
 

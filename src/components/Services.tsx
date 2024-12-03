@@ -1,37 +1,39 @@
-import { Laptop, Brush, BarChart, Shield, Video, Cloud } from 'lucide-react';
+import { Laptop, Brush, Video, Book, Pen } from 'lucide-react';
+import { FiFigma } from 'react-icons/fi';
 
 const services = [
   {
     icon: <Laptop className="w-8 h-8" />,
     title: 'Web Development',
-    description: 'Build responsive and user-friendly websites that offer seamless user experiences across all devices.'
+    description: 'Develop interactive and responsive websites that offer smooth and seamless user experiences.'
   },
   {
     icon: <Brush className="w-8 h-8" />,
-    title: 'Graphic Design',
-    description: 'Create visually compelling graphics for branding, marketing materials, websites, and social media.'
+    title: 'Logo Design',
+    description: 'Design professional and creative logos that establish a strong visual identity for your brand.'
   },
   {
-    icon: <BarChart className="w-8 h-8" />,
-    title: 'Data Analytics',
-    description: 'Transform data into actionable insights to help businesses make informed decisions and drive growth.'
+    icon: <Pen className="w-8 h-8" />,
+    title: 'Brand Design',
+    description: 'Craft cohesive brand identities that effectively communicate your business’s core values.'
   },
   {
-    icon: <Shield className="w-8 h-8" />,
-    title: 'Cybersecurity',
-    description: 'Ensure your digital assets are protected against threats with advanced cybersecurity solutions and protocols.'
+    icon: <FiFigma className="w-8 h-8" />,
+    title: 'UI Design',
+    description: 'Create intuitive and visually appealing user interface designs using Figma for your projects.'
   },
   {
     icon: <Video className="w-8 h-8" />,
-    title: 'Video Production',
-    description: 'Create high-quality video content for marketing, branding, and storytelling that engages audiences effectively.'
+    title: 'Presentation Design',
+    description: 'Design impactful presentations that effectively communicate ideas and captivate your audience.'
   },
   {
-    icon: <Cloud className="w-8 h-8" />,
-    title: 'Cloud Solutions',
-    description: 'Leverage the power of cloud computing to enhance collaboration, scalability, and flexibility for your business.'
+    icon: <Book className="w-8 h-8" />,
+    title: 'Report Services',
+    description: 'Deliver comprehensive and visually appealing reports tailored to your specific business needs.'
   }
 ];
+
 
 export default function Services() {
   return (
