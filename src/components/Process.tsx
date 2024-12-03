@@ -34,7 +34,7 @@ export default function Process() {
           <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight">
             My process to help<br />
             Clints
-            <span className="text-pink-500"> 2x their <span className="text-blue-500"> revnue</span></span>
+            <span className="text-pink-500"> 2x their <span className="text-blue-500"> $Revnue</span></span>
           </h2>
           <p className="mt-6 text-gray-400 max-w-2xl mx-auto">
             "With over 4 years of experience in the design industry, I’ve refined this process to perfection. That’s why you can trust it completely to deliver exceptional results tailored to your needs."

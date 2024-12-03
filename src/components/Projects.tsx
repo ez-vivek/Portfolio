@@ -35,7 +35,7 @@ export default function Projects() {
       </div>
       <div className="max-w-7xl mx-auto px-4 relative z-10 animate__animated animate__fadeIn animate__delay-0.9s">
         <h2 className="text-4xl text-center md:text-6xl font-bold mb-8">
-          Selected <span className="text-pink-500">Projects</span>
+          Selected <span className="text-pink-500">&lt;/&gt;Projects</span>
         </h2>
         <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
           Over the years, I've partnered with startups of all sizes and various stages to create some truly unique products. Here are a few that I feel were the most challenging yet rewarding.
