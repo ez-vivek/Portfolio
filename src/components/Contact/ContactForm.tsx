@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { User2, Mail, DollarSign, MessageSquare, ArrowRight } from 'lucide-react';
+import { User2, Mail, MessageSquare, ArrowRight, ChevronDown } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
 
 const budgetOptions = [
@@ -35,11 +35,12 @@ export default function ContactForm() {
     email: '',
     budget: '',
     message: '',
-    services: [] // New state for services
+    services: []
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isBudgetDropdownOpen, setBudgetDropdownOpen] = useState(false);
+  const [isServicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
-  // Fix for handleServiceToggle
   const handleServiceToggle = (value: string) => {
     setFormData((prevState) => ({
       ...prevState,
@@ -47,6 +48,20 @@ export default function ContactForm() {
         ? prevState.services.filter((service) => service !== value)
         : [...prevState.services, value]
     }));
+  };
+
+  const handleBudgetSelect = (value: string) => {
+    // If the selected budget is already the current one, reset to default
+    setFormData((prevState) => ({
+      ...prevState,
+      budget: prevState.budget === value ? '' : value
+    }));
+    setBudgetDropdownOpen(false); // Close dropdown after selection
+  };
+
+  const handleServiceSelect = (value: string) => {
+    handleServiceToggle(value);
+    setServicesDropdownOpen(false); // Close dropdown after selection
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -62,12 +77,12 @@ export default function ContactForm() {
     try {
       const data = {
         access_key: WEB3FORMS_ACCESS_KEY,
-        subject: `New message from ${formData.name}`, // Set a meaningful subject
+        subject: `New message from ${formData.name}`,
         from_name: formData.name,
         from_email: formData.email,
         budget: formData.budget,
         message: formData.message,
-        services: formData.services.join(", ") // Include selected services
+        services: formData.services.join(", ")
       };
 
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -96,7 +111,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-md bg-zinc-900/50 backdrop-blur-xl p-8 rounded-2xl border border-white/10">
+    <form onSubmit={handleSubmit} className="w-full max-w-md bg-zinc-900/50 backdrop-blur-xl p-8 rounded-2xl border border-white/10 relative">
       <Toaster position="top-right" />
       <h3 className="text-xl font-semibold mb-6 text-white">FILL THE FORM BELOW*</h3>
 
@@ -129,43 +144,62 @@ export default function ContactForm() {
           />
         </div>
 
-        {/* Budget Select */}
+        {/* Budget Dropdown */}
         <div className="relative">
-          <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
-          <select
-            value={formData.budget}
-            onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-            className="w-full bg-zinc-800/50 border border-white/10 rounded-lg py-3 pl-12 pr-4 text-white appearance-none focus:outline-none focus:ring-2 focus:ring-pink-500/50"
-            required
-            disabled={isSubmitting}
+          <button
+            type="button"
+            onClick={() => setBudgetDropdownOpen(!isBudgetDropdownOpen)}
+            className="w-full bg-zinc-800/50 border border-white/10 rounded-lg py-3 pl-4 pr-12 text-white flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-pink-500/50"
           >
-            <option value="">Choose budget range</option>
-            {budgetOptions.map((option) => (
-              <option key={option} value={option} className="bg-zinc-800">
-                {option}
-              </option>
-            ))}
-          </select>
+            <span>{formData.budget || "Choose budget range"}</span>
+            <ChevronDown className="w-5 h-5 text-gray-400" />
+          </button>
+
+          {isBudgetDropdownOpen && (
+            <div className="absolute left-0 right-0 bg-black text-white border border-white/10 mt-2 rounded-lg shadow-lg z-20">
+              {budgetOptions.map((option) => (
+                <button
+                  key={option}
+                  onClick={() => handleBudgetSelect(option)}
+                  className={`w-full text-left px-4 py-2 rounded-lg ${formData.budget === option
+                    ? "bg-pink-500 text-white"
+                    : "text-gray-400 hover:bg-zinc-700 hover:text-white"
+                    }`}
+                >
+                  {option}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
-        {/* Services Selection */}
-        <div>
-          <h4 className="text-white mb-2">Choose Design Type</h4>
-          <div className="flex flex-wrap gap-4">
-            {serviceOptions.map((service) => (
-              <button
-                type="button"
-                key={service.value}
-                onClick={() => handleServiceToggle(service.value)}
-                className={`px-4 py-2 rounded-lg border border-white/10 ${formData.services.includes(service.value)
-                  ? "bg-pink-500 text-white"
-                  : "bg-zinc-800 text-gray-400"
-                  }`}
-              >
-                {service.label}
-              </button>
-            ))}
-          </div>
+        {/* Services Dropdown */}
+        <div className="relative">
+          <button
+            type="button"
+            onClick={() => setServicesDropdownOpen(!isServicesDropdownOpen)}
+            className="w-full bg-zinc-800/50 border border-white/10 rounded-lg py-3 pl-4 pr-12 text-white flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-pink-500/50"
+          >
+            <span>{formData.services.length > 0 ? formData.services.join(", ") : "Choose services"}</span>
+            <ChevronDown className="w-5 h-5 text-gray-400" />
+          </button>
+
+          {isServicesDropdownOpen && (
+            <div className="absolute left-0 right-0 bg-black text-white border border-white/10 mt-2 rounded-lg shadow-lg z-20">
+              {serviceOptions.map((service) => (
+                <button
+                  key={service.value}
+                  onClick={() => handleServiceSelect(service.value)}
+                  className={`w-full text-left px-4 py-2 rounded-lg ${formData.services.includes(service.value)
+                    ? "bg-pink-500 text-white"
+                    : "text-gray-400 hover:bg-zinc-700 hover:text-white"
+                    }`}
+                >
+                  {service.label}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Message Input */}
