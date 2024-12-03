@@ -13,7 +13,7 @@ const projects = [
     url: 'https://ez-vivek.github.io/Vision-Pro-3D-Animation/',
   },
   {
-    image: '/Redefine Preview.webp',
+    image: '/Redefine Preview.png',
     title: 'Redefine Gaming - Award Website',
     tags: ['ReactJs', 'TailwindCss', 'Typescript', 'Gsap', 'Animations', 'Smooth Scrolling'],
     url: 'https://redefineawardgamingwebsite.vercel.app',
