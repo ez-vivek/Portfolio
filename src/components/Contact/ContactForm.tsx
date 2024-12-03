@@ -139,7 +139,7 @@ export default function ContactForm() {
 
         {/* Services Selection */}
         <div>
-          <h4 className="text-white mb-2">Choose Design Types</h4>
+          <h4 className="text-white mb-2">Choose Designes Type</h4>
           <div className="flex flex-wrap gap-4">
             {serviceOptions.map((service) => (
               <button
