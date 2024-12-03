@@ -47,11 +47,17 @@ export default function Services() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div key={service.title} className="p-8 rounded-xl bg-zinc-900/50 border border-zinc-800 group hover:border-blue-500/50 transition-colors">
+            <a
+              key={service.title}
+              href="#contact"
+              className="p-8 rounded-xl bg-zinc-900/50 border border-zinc-800 group hover:border-blue-500/50 transition-colors block"
+            >
               <div className="text-pink-500 mb-4">{service.icon}</div>
-              <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                {service.title}
+              </h3>
               <p className="text-gray-400">{service.description}</p>
-            </div>
+            </a>
           ))}
         </div>
       </div>

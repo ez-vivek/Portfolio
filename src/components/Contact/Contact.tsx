@@ -4,9 +4,9 @@ import ContactForm from './ContactForm';
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-black relative flex items-center justify-center overflow-hidden py-32 animate__animated animate__fadeIn animate__delay-0.9s">
+    <div id="contact" className="min-h-screen bg-black relative flex items-center justify-center overflow-hidden py-32 animate__animated animate__fadeIn animate__delay-0.9s">
       <GradientBackground />
-      
+
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
@@ -16,7 +16,7 @@ export default function Contact() {
               mind? Let's work<br />
               <span className="text-pink-500">together</span>
             </h2>
-            
+
             <p className="text-gray-400 text-lg mb-8">
               Have a project in mind? Looking to partner or work together? Reach out through the form and I'll get back to you in the next 48 hours.
             </p>
@@ -29,7 +29,7 @@ export default function Contact() {
                 </div>
                 <span>vivektalent200@gmail.com</span>
               </a>
-              
+
               <a href="Call:917003900610" className="flex items-center gap-4 text-white hover:text-blue-300 transition-colors">
                 <div className="w-10 h-10 rounded-full bg-pink-500/10 flex items-center justify-center">
                   <Phone className="w-5 h-5" />
