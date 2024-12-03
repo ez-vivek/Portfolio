@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { User2, Mail, DollarSign, MessageSquare, ArrowRight} from 'lucide-react';
+import { User2, Mail, DollarSign, MessageSquare, ArrowRight } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
 
 const budgetOptions = [
@@ -14,13 +14,23 @@ const serviceOptions = [
   { label: "Website", value: "Website Design" },
   { label: "Logo", value: "Logo design" },
   { label: "Brand", value: "Brand Design" },
-  { label: "UI", value: "UI Design" }
+  { label: "UI", value: "UI Design" },
+  { label: "Presentation", value: "Presentation Design" },
+  { label: "Report", value: "Report Design" },
 ];
 
 const WEB3FORMS_ACCESS_KEY = "1b677c39-e3cb-4674-91b5-5e24d274e052"; // Replace with your Web3Forms access key
 
+type FormData = {
+  name: string;
+  email: string;
+  budget: string;
+  message: string;
+  services: string[];
+};
+
 export default function ContactForm() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     budget: '',
@@ -29,7 +39,8 @@ export default function ContactForm() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleServiceToggle = (value) => {
+  // Fix for handleServiceToggle
+  const handleServiceToggle = (value: string) => {
     setFormData((prevState) => ({
       ...prevState,
       services: prevState.services.includes(value)
@@ -139,7 +150,7 @@ export default function ContactForm() {
 
         {/* Services Selection */}
         <div>
-          <h4 className="text-white mb-2">Choose Designes Type</h4>
+          <h4 className="text-white mb-2">Choose Design Type</h4>
           <div className="flex flex-wrap gap-4">
             {serviceOptions.map((service) => (
               <button
@@ -147,8 +158,8 @@ export default function ContactForm() {
                 key={service.value}
                 onClick={() => handleServiceToggle(service.value)}
                 className={`px-4 py-2 rounded-lg border border-white/10 ${formData.services.includes(service.value)
-                    ? "bg-pink-500 text-white"
-                    : "bg-zinc-800 text-gray-400"
+                  ? "bg-pink-500 text-white"
+                  : "bg-zinc-800 text-gray-400"
                   }`}
               >
                 {service.label}
@@ -185,4 +196,3 @@ export default function ContactForm() {
     </form>
   );
 }
-
