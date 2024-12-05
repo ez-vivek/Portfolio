@@ -43,13 +43,9 @@ export default function Navbar() {
                             0 0 0.5px 0.5px rgba(255, 105, 180, 0.5)
                         `
                     }}
-
+                    
                 >
                     <div className="flex justify-center items-center gap-6">
-                        {/* <a href="#experience" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">Experience</a>
-                        <a href="#projects" rel="noopener noreferrer" className="text-white hover:text-pink-400 transition-colors">Projects</a>
-                        <a href="#designs" rel="noopener noreferrer" className="text-white hover:text-purple-400 transition-colors">Designs</a>
-                        <a href="#contact" rel="noopener noreferrer" className="text-white hover:text-yellow-400 transition-colors">Contact</a> */}
                         <a href="https://github.com/ez-vivek" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">
                             <i className="bi bi-github text-xl sm:text-2xl"></i>
                             <span className="sr-only">GitHub</span>
@@ -76,4 +72,3 @@ export default function Navbar() {
         </div>
     )
 }
-

@@ -24,7 +24,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <div className="py-20 bg-black relative overflow-hidden">
+    <div id="process" className="py-20 bg-black relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-40 right-20 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl" />
         <div className="absolute bottom-40 left-20 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl" />

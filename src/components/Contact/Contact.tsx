@@ -1,6 +1,6 @@
-
 import GradientBackground from './GradientBackground';
 import ContactForm from './ContactForm';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Contact() {
   return (
@@ -20,6 +20,28 @@ export default function Contact() {
             <p className="text-gray-400 text-lg mb-8">
               Have a project in mind❓ Looking to partner or work together? Reach out through the form and I'll get back to you in the next 48 hours.
             </p>
+            <div className="flex space-x-4 mt-6">
+              <a href="https://github.com/ez-vivek" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">
+                <i className="bi bi-github text-xl sm:text-2xl"></i>
+                <span className="sr-only">GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/ezvivek" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                <i className="bi bi-linkedin text-xl sm:text-2xl"></i>
+                <span className="sr-only">LinkedIn</span>
+              </a>
+              <a href="https://www.instagram.com/ez.vivek" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-400 transition-colors">
+                <i className="bi bi-instagram text-xl sm:text-2xl"></i>
+                <span className="sr-only">Instagram</span>
+              </a>
+              <a href="https://x.com/ez_vivek" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">
+                <i className="bi bi-twitter-x text-xl sm:text-2xl"></i>
+                <span className="sr-only">Twitter</span>
+              </a>
+              <a href="mailto:vivektalent200@gmail.com" className="text-white hover:text-yellow-400 transition-colors">
+                <i className="bi bi-envelope text-xl sm:text-2xl"></i>
+                <span className="sr-only">Email</span>
+              </a>
+            </div>
           </div>
           {/* Right Column - Contact Form */}
           <div className="flex justify-center lg:justify-end">
@@ -30,3 +52,4 @@ export default function Contact() {
     </div>
   );
 }
+
