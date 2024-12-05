@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'animate.css'
-import { Home } from 'lucide-react'
 
 export default function Navbar() {
     const [isVisible, setIsVisible] = useState(true)
@@ -44,11 +43,11 @@ export default function Navbar() {
                             0 0 0.5px 0.5px rgba(255, 105, 180, 0.5)
                         `
                     }}
-                    
+
                 >
                     <div className="flex justify-center items-center gap-6">
-                    <a href="#hero" className="text-white hover:text-gray-200 transition-colors">
-                            <Home className="text-xl sm:text-2xl" />
+                        <a href="#hero" className="text-white hover:text-gray-200 transition-colors">
+                            <i className="bi bi-house-door text-xl sm:text-2xl"></i>
                             <span className="sr-only">Home</span>
                         </a>
                         <a href="https://github.com/ez-vivek" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">
