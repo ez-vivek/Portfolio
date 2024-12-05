@@ -17,7 +17,7 @@ export default function Contact() {
             </h2>
 
             <p className="text-gray-400 text-lg mb-8">
-              Have a project in mind❓ Looking to partner or work together? Reach out through the form and I'll get back to you in the next 48 hours.
+              Have a project in mind? Looking to partner or work together? Reach out through the form and I'll get back to you in the next 48 hours.
             </p>
             <div className="flex space-x-4 mt-6 gap-1">
               <a href="#hero" className="text-white hover:text-gray-200 transition-colors">
