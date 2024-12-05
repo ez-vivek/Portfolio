@@ -28,7 +28,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="py-20 bg-black relative overflow-hidden">
+    <div id="projects" className="py-20 bg-black relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-40 left-80 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl" />
         <div className="absolute bottom-10 right-40 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl" />

@@ -9,6 +9,7 @@
 body {
   background: black;
 }
+
 body::-webkit-scrollbar {
   width: 0px;
 }
@@ -20,6 +21,7 @@ body::-webkit-scrollbar-track {
 html {
   scroll-behavior: smooth;
 }
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -81,4 +83,3 @@ html {
     animation-duration: 20s;
   }
 }
-

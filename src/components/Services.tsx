@@ -37,7 +37,7 @@ const services = [
 
 export default function Services() {
   return (
-    <div className="py-20 bottom-10 bg-black">
+    <div id="services" className="py-20 bottom-10 bg-black">
       <div className="max-w-7xl mx-auto px-4 animate__animated animate__fadeIn animate__delay-0.9s">
         <h2 className="text-4xl md:text-6xl font-bold text-center mb-4">
           Look at my <span className="text-pink-500">Services</span>

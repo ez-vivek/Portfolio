@@ -5,7 +5,7 @@ import {
 
 export default function Hero() {
   return (
-    <div className="min-h-screen bg-black flex items-center">
+    <div id="hero" className="min-h-screen bg-black flex items-center">
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 md:top-40 md:left-40 w-48 md:w-96 h-48 md:h-96 bg-pink-500/20 rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-10 md:bottom-40 md:right-20 w-48 md:w-96 h-48 md:h-96 bg-purple-500/20 rounded-full blur-3xl" />
