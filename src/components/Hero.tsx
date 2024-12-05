@@ -36,10 +36,10 @@ export default function Hero() {
                 <FaBootstrap className="hover:text-purple-500 transition-colors" />
                 <FaGit className="transition-colors" />
                 <FaGithub className="transition-colors" />
-                <FaWordpress className="hover:text-blue-500 transition-colors" />
-                <FaGoogleDrive className="hover:text-yellow-500 transition-colors" />
                 <FaAws className="hover:text-orange-500 transition-colors" />
+                <FaWordpress className="hover:text-blue-500 transition-colors" />
                 <FaFigma className="hover:text-purple-500 transition-colors" />
+                <FaGoogleDrive className="hover:text-yellow-500 transition-colors" />
               </div>
               <div className="flex gap-4 sm:gap-8">
                 <FaHtml5 className="hover:text-pink-500 transition-colors" />
@@ -51,10 +51,10 @@ export default function Hero() {
                 <FaBootstrap className="hover:text-purple-500 transition-colors" />
                 <FaGit className="transition-colors" />
                 <FaGithub className="transition-colors" />
-                <FaWordpress className="hover:text-blue-500 transition-colors" />
-                <FaGoogleDrive className="hover:text-yellow-500 transition-colors" />
                 <FaAws className="hover:text-orange-500 transition-colors" />
+                <FaWordpress className="hover:text-blue-500 transition-colors" />
                 <FaFigma className="hover:text-purple-500 transition-colors" />
+                <FaGoogleDrive className="hover:text-yellow-500 transition-colors" />
               </div>
             </div>
           </div>
