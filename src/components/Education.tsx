@@ -6,29 +6,30 @@ const educationData = [
         school: "Jis University",
         duration: "2023 - 2027",
         location: "West Bengal, INDIA",
-        description: "Specialized in user experience design and interactive systems, focusing on emerging technologies, design thinking methodologies & user-centered solutions for engagement and usability across digital platforms."
+        description: "Pursuing a comprehensive understanding of software development, data structures, algorithms, machine learning, and system design, with hands-on exposure to modern computing technologies and tools."
     },
     {
         degree: "Logo & Brand Designer",
         school: "Freelancer",
         duration: "2022 - Now",
         location: "West Bengal, INDIA",
-        description: "Over 3 years of exp. having digital design principles, typography, layout, color theory, visual hierarchy, and interactive media to create engaging and aesthetically pleasing user experiences across various platforms."
+        description: "Specializing in crafting distinct visual identities, with expertise in digital design principles, typography, color theory, and brand strategy to deliver impactful and cohesive branding solutions."
     },
     {
         degree: "UI Designer",
         school: "Freelancer",
         duration: "2022 - Now",
         location: "West Bengal, INDIA",
-        description: "Over 3 years of creating intuitive and visually appealing interfaces by leveraging principles of user-centered design, interaction design, and responsive frameworks to enhance digital experiences."
+        description: "Designs user-friendly interfaces focused on enhancing usability and aesthetics, utilizing responsive frameworks, interaction design principles, and iterative prototyping techniques."
     },
     {
         degree: "Report & Presentation",
         school: "Freelancer",
         duration: "2022 - Now",
         location: "West Bengal, INDIA",
-        description: "Crafts compelling narratives, develops engaging scripts over 3 years for diverse media formats, and utilizes storytelling techniques to connect with audiences emotionally and intellectually."
-    }   
+        description: "Develops professional reports and presentations with a strong narrative structure, visual clarity, and attention to detail, ensuring effective communication of complex ideas and data."
+    }
+      
 ];
 
 export default function Education() {
