@@ -70,7 +70,6 @@ export default function Navbar() {
                             <i className="bi bi-envelope text-xl sm:text-2xl"></i>
                             <span className="sr-only">Email</span>
                         </a>
-                        <i className="bi bi-layout-sidebar-inset-reverse text-xl sm:text-2xl" title="Sidebar"></i>
                     </div>
                 </nav>
             </div>
