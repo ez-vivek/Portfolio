@@ -43,7 +43,7 @@ export default function Services() {
           Look at my <span className="text-pink-500">Services</span>
         </h2>
         <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
-          "If you're looking for someone who can help you create a strong digital web presence, look no further. I’m here to ensure your vision becomes a reality. Congratulations!"
+          "If you're looking for someone who can help you create a strong digital web presence, look no further. I’m here to ensure your vision becomes a reality."
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
