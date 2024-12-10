@@ -50,7 +50,7 @@ export default function Services() {
             <a
               key={service.title}
               href="#contact"
-              className="p-8 rounded-xl bg-zinc-900/50 border border-zinc-800 group hover:border-purple-500/50 transition-colors block"
+              className="p-8 rounded-xl bg-zinc-900/50 border border-zinc-800 group hover:border-pink-500/50 transition-colors block"
             >
               <div className="text-pink-500 mb-4">{service.icon}</div>
               <h3 className="text-2xl font-bold text-white mb-4">
