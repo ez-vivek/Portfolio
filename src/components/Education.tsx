@@ -44,7 +44,7 @@ export default function Education() {
             {/* Content */}
             <div className="max-w-7xl mx-auto px-4 relative z-10 animate__animated animate__fadeIn animate__delay-0.9s">
                 <h2 className="text-4xl md:text-6xl font-bold mb-4 text-center">
-                    My<span className="text-pink-500">🧾Education </span>
+                    My<span className="text-pink-500"> Education </span>
                     & <span className="text-blue-500">Exp.</span>
                 </h2>
                 <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
