@@ -46,10 +46,6 @@ export default function Navbar() {
 
                 >
                     <div className="flex justify-center items-center gap-6">
-                        <a href="#hero" className="text-white hover:text-gray-200 transition-colors">
-                            <i className="bi bi-house-door text-xl sm:text-2xl"></i>
-                            <span className="sr-only">Home</span>
-                        </a>
                         <a href="https://github.com/ez-vivek" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">
                             <i className="bi bi-github text-xl sm:text-2xl"></i>
                             <span className="sr-only">GitHub</span>

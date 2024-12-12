@@ -20,7 +20,7 @@ export default function Hero() {
             <span className="text-white">people <span className="text-blue-500/70">Love.</span></span>
           </h1>
           <p className="mt-6 md:mt-8 text-gray-400 text-base sm:text-lg max-w-2xl mx-auto px-4">
-            I'm Vivek — a designer who works with startups looking to push creative boundaries and create unique user experiences.
+            Hello, I'm Vivek — a designer who works with startups looking to push creative boundaries and create unique user experiences.
           </p>
 
           {/* Scrolling Icons Section */}
