@@ -19,11 +19,7 @@ export default function Contact() {
             <p className="text-gray-400 text-lg mb-8">
               Have a project in mind? Looking to partner or work together? Reach out through the form and I'll get back to you in the next 48 hours.
             </p>
-            <div className="flex space-x-4 mt-6 gap-1">
-              <a href="#hero" className="text-white hover:text-gray-200 transition-colors">
-              <i className="bi bi-house-door text-xl sm:text-2xl"></i>
-                <span className="sr-only">Home</span>
-              </a>
+            <div className="flex space-x-4 mt-6 gap-4">
               <a href="https://github.com/ez-vivek" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">
                 <i className="bi bi-github text-xl sm:text-2xl"></i>
                 <span className="sr-only">GitHub</span>
