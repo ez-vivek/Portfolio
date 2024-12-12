@@ -2,14 +2,6 @@ import { useState } from 'react';
 import { User2, Mail, MessageSquare, ArrowRight, ChevronDown } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
 
-const budgetOptions = [
-  "Less than $5K",
-  "$5K - $10K",
-  "$10K - $20K",
-  "$20K - $50K",
-  "More than $50K"
-];
-
 const serviceOptions = [
   { label: "Website Design", value: "Website Design" },
   { label: "Logo Design", value: "Logo design" },
@@ -24,7 +16,6 @@ const WEB3FORMS_ACCESS_KEY = "1b677c39-e3cb-4674-91b5-5e24d274e052"; // Replace 
 type FormData = {
   name: string;
   email: string;
-  budget: string;
   message: string;
   services: string[];
 };
@@ -33,12 +24,10 @@ export default function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
-    budget: '',
     message: '',
     services: []
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isBudgetDropdownOpen, setBudgetDropdownOpen] = useState(false);
   const [isServicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
   const handleServiceToggle = (value: string) => {
@@ -48,15 +37,6 @@ export default function ContactForm() {
         ? prevState.services.filter((service) => service !== value)
         : [...prevState.services, value]
     }));
-  };
-
-  const handleBudgetSelect = (value: string) => {
-    // If the selected budget is already the current one, reset to default
-    setFormData((prevState) => ({
-      ...prevState,
-      budget: prevState.budget === value ? '' : value
-    }));
-    setBudgetDropdownOpen(false); // Close dropdown after selection
   };
 
   const handleServiceSelect = (value: string) => {
@@ -80,7 +60,6 @@ export default function ContactForm() {
         subject: `New message from ${formData.name}`,
         from_name: formData.name,
         from_email: formData.email,
-        budget: formData.budget,
         message: formData.message,
         services: formData.services.join(", ")
       };
@@ -98,7 +77,7 @@ export default function ContactForm() {
 
       if (result.success) {
         toast.success('Message sent successfully!');
-        setFormData({ name: '', email: '', budget: '', message: '', services: [] });
+        setFormData({ name: '', email: '', message: '', services: [] });
       } else {
         throw new Error(result.message || "Failed to send message.");
       }
@@ -113,7 +92,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-md bg-zinc-900/50 backdrop-blur-xl p-8 rounded-2xl border border-white/10 relative">
       <Toaster position="top-right" />
-      <h3 className="text-xl font-semibold mb-6 text-white">FILL THE FORM BELOW*</h3>
+      <h3 className="text-xl font-semibold mb-6 text-white">LET'S MAKE A CONNECTION*</h3>
 
       <div className="space-y-6">
         {/* Name Input */}
@@ -142,35 +121,6 @@ export default function ContactForm() {
             required
             disabled={isSubmitting}
           />
-        </div>
-
-        {/* Budget Dropdown */}
-        <div className="relative">
-          <button
-            type="button"
-            onClick={() => setBudgetDropdownOpen(!isBudgetDropdownOpen)}
-            className="w-full bg-zinc-800/50 border border-white/10 rounded-lg py-3 pl-4 pr-12 text-white flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-pink-500/50"
-          >
-            <span>{formData.budget || "Choose budget range"}</span>
-            <ChevronDown className="w-5 h-5 text-gray-400" />
-          </button>
-
-          {isBudgetDropdownOpen && (
-            <div className="absolute left-0 right-0 bg-black text-white border border-white/10 mt-2 rounded-lg shadow-lg z-20">
-              {budgetOptions.map((option) => (
-                <button
-                  key={option}
-                  onClick={() => handleBudgetSelect(option)}
-                  className={`w-full text-left px-4 py-2 rounded-lg ${formData.budget === option
-                    ? "bg-pink-500 text-white"
-                    : "text-gray-400 hover:bg-zinc-700 hover:text-white"
-                    }`}
-                >
-                  {option}
-                </button>
-              ))}
-            </div>
-          )}
         </div>
 
         {/* Services Dropdown */}

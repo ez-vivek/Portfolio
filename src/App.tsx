@@ -2,7 +2,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Education from './components/Education';
 import Projects from './components/Projects';
-// import LogoDesign from './components/LogoDesign';
 import Services from './components/Services';
 import Process from './components/Process';
 import Contact from './components/Contact';
@@ -15,7 +14,6 @@ function App() {
       <Hero />     
       <Education/>
       <Projects />
-      {/* <LogoDesign /> */}
       <Services />
       <Process />
       <Contact/>
