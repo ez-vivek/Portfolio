@@ -12,11 +12,11 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 9px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #9b4cc2e5;
-  border-radius: 20px;
+  background: #b596c5e5;
+  border-radius: 10px;
 }
 html {
   scroll-behavior: smooth;
