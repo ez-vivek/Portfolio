@@ -1,12 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 const projects = [
-  {
-    image: '/Workify.png',
-    title: 'Dev Workify - Collaborative Workspace',
-    tags: ['Html', 'Css', 'JavaScript', 'Animations', 'Tools', 'Workspace'],
-    url: 'https://ez-vivek.github.io/DevWorkify/',
-  },
-  {
+ {
     image: '/Apple Preview.png',
     title: 'Apple Vision Pro - 3d Animation Model',
     tags: ['Html', 'Css', 'JavaScript', 'Gsap', 'Animations', '3D'],
@@ -23,6 +17,24 @@ const projects = [
     title: 'Elixpo AI - Text to Image Generator',
     tags: ['Html', 'Css', 'JavaScript', 'python', 'Firebase', 'Contributed as Frontend'],
     url: 'https://circuit-overtime.github.io/Elixpo_ai_pollinations/src/auth/',
+  },
+  {
+    image: '/Workify.png',
+    title: 'Dev Workify - All in One Web Notes Tool',
+    tags: ['Html', 'Css', 'JavaScript', 'Local Storage', 'Collab Project', 'College Project'],
+    url: 'https://ez-vivek.github.io/DevWorkify/',
+  },
+  {
+    image: '/InkFlow.png',
+    title: 'InkFlow - Web Sketch Tool',
+    tags: ['Html', 'Css', 'JavaScript', 'Sketch JS', 'Art', 'Coming Soon'],
+    url: '',
+  },
+  {
+    image: '/Elixpo UI.png',
+    title: 'Elixpo UI - Components Library',
+    tags: ['Html', 'Css', 'JavaScript', 'Locomotive', 'UI', 'Coming Soon'],
+    url: '',
   },
 ];
 
