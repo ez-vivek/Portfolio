@@ -27,8 +27,8 @@ const projects = [
   {
     image: '/InkFlow.png',
     title: 'InkFlow - Web Sketch Tool',
-    tags: ['Html', 'Css', 'JavaScript', 'Sketch JS', 'Art', 'Coming Soon'],
-    url: '',
+    tags: ['Html', 'Css', 'JavaScript', 'Sketch JS', 'Art'],
+    url: 'https://inkflow-workspace.vercel.app',
   },
   {
     image: '/Elixpo UI.png',
