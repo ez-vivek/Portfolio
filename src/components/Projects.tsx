@@ -1,16 +1,10 @@
 import { ArrowRight } from 'lucide-react';
 const projects = [
- {
-    image: '/Apple Preview.png',
-    title: 'Apple Vision Pro - 3d Animation Model',
-    tags: ['Html', 'Css', 'JavaScript', 'Gsap', 'Animations', '3D'],
-    url: 'https://ez-vivek.github.io/Vision-Pro-3D-Animation/',
-  },
   {
-    image: '/Redefine Preview.png',
-    title: 'Redefine Gaming - Award Website',
-    tags: ['ReactJs', 'TailwindCss', 'Typescript', 'Gsap', 'Animations', 'Smooth Scrolling'],
-    url: 'https://redefineawardgamingwebsite.vercel.app',
+    image: '/InkFlow.png',
+    title: 'InkFlow - Web Sketch Tool',
+    tags: ['Html', 'Css', 'JavaScript', 'Sketch JS', 'Art', 'Drawing', 'Canvas','Shapes'],
+    url: 'https://inkflow-workspace.vercel.app',
   },
   {
     image: '/Elixpo Preview.png',
@@ -19,23 +13,18 @@ const projects = [
     url: 'https://circuit-overtime.github.io/Elixpo_ai_pollinations/src/auth/',
   },
   {
-    image: '/Workify.png',
-    title: 'Dev Workify - All in One Web Notes Tool',
-    tags: ['Html', 'Css', 'JavaScript', 'Local Storage', 'Collab Project', 'College Project'],
-    url: 'https://ez-vivek.github.io/DevWorkify/',
+    image: '/Apple Preview.png',
+    title: 'Apple Vision Pro - 3D Animation',
+    tags: ['Html', 'Css', 'JavaScript', 'Gsap', 'Animations', '3D', 'Model','Smooth Scrolling'],
+    url: 'https://ez-vivek.github.io/Vision-Pro-3D-Animation/',
   },
   {
-    image: '/InkFlow.png',
-    title: 'InkFlow - Web Sketch Tool',
-    tags: ['Html', 'Css', 'JavaScript', 'Sketch JS', 'Art'],
-    url: 'https://inkflow-workspace.vercel.app',
+    image: '/Redefine Preview.png',
+    title: 'Redefine Gaming - Award Website',
+    tags: ['ReactJs', 'TailwindCss', 'Typescript', 'Gsap', 'Animations', 'Smooth Scrolling'],
+    url: 'https://redefineawardgamingwebsite.vercel.app',
   },
-  {
-    image: '/Elixpo UI.png',
-    title: 'Elixpo UI - Components Library',
-    tags: ['Html', 'Css', 'JavaScript', 'Locomotive', 'UI', 'Coming Soon'],
-    url: '',
-  },
+
 ];
 
 export default function Projects() {

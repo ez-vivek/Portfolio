@@ -12,12 +12,12 @@ export default function Contact() {
           <div>
             <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Let's go🔥Have <span className="text-blue-500">projects</span> in<br />
-              mind? Let's work<br />
+              mind? Let's build<br />
               <span className="text-pink-500">together.</span>
             </h2>
 
             <p className="text-gray-400 text-lg mb-8">
-              Have a project in mind? Looking to partner or work together? Reach out through the form and I'll get back to you in the next 48 hours.
+              Have a project in mind? Looking to partner or work together? Reach out through the form and I'll get back to you in the next 12 hours.
             </p>
             <div className="flex space-x-4 mt-6 gap-4">
               <a href="https://github.com/ez-vivek" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">

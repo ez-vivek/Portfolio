@@ -4,11 +4,11 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const serviceOptions = [
   { label: "Website Design", value: "Website Design" },
-  { label: "Logo Design", value: "Logo design" },
-  { label: "Brand Design", value: "Brand Design" },
   { label: "UI Design", value: "UI Design" },
-  { label: "Presentation Design", value: "Presentation Design" },
-  { label: "Report Design", value: "Report Design" },
+  { label: "Logo Design", value: "Logo design" },
+  // { label: "Brand Design", value: "Brand Design" },
+  // { label: "Presentation Design", value: "Presentation Design" },
+  // { label: "Report Design", value: "Report Design" },
 ];
 
 const WEB3FORMS_ACCESS_KEY = "1b677c39-e3cb-4674-91b5-5e24d274e052"; // Replace with your Web3Forms access key
