@@ -9,14 +9,14 @@ const educationData = [
         description: "Pursuing a comprehensive understanding of software development, data structures, algorithms, machine learning, and system design, with hands-on exposure to modern computing technologies and tools."
     },
     {
-        degree: "Frontend Web Developer",
+        degree: "Web Developer",
         school: "Freelancer",
-        duration: "2022 - Now",
+        duration: "2023 - Now",
         location: "West Bengal, INDIA",
         description: "Specializing in building robust web applications, with expertise in front-end and back-end development, responsive design, database management, and modern web technologies to deliver seamless and efficient full-stack solutions."
     },
     {
-        degree: "Logo & Brand Designer",
+        degree: "Logo Designer",
         school: "Freelancer",
         duration: "2022 - Now",
         location: "West Bengal, INDIA",
@@ -25,7 +25,7 @@ const educationData = [
     {
         degree: "UI Designer",
         school: "Freelancer",
-        duration: "2022 - Now",
+        duration: "2023 - Now",
         location: "West Bengal, INDIA",
         description: "Designs user-friendly interfaces focused on enhancing usability and aesthetics, utilizing responsive frameworks, interaction design principles, and iterative prototyping techniques."
     }   
