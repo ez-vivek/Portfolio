@@ -36,9 +36,9 @@ export default function Contact() {
                 <i className="bi bi-twitter-x text-xl sm:text-2xl"></i>
                 <span className="sr-only">Twitter</span>
               </a>
-              <a href="mailto:vivektalent200@gmail.com" className="text-white hover:text-yellow-400 transition-colors">
-                <i className="bi bi-envelope text-xl sm:text-2xl"></i>
-                <span className="sr-only">Email</span>
+              <a href="https://read.cv/ez.vivek" target="_blank" className="text-white hover:text-blue-300 transition-colors">
+                <i className="bi bi-file-text text-xl sm:text-2xl"> ← Resume</i>
+                <span className="sr-only">Resume</span>
               </a>
             </div>
           </div>
