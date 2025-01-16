@@ -2,9 +2,9 @@ import { ArrowRight } from 'lucide-react';
 const projects = [
   {
     image: '/InkFlow.png',
-    title: 'InkFlow - Web Sketch Tool',
-    tags: ['Html', 'Css', 'JavaScript', 'Sketch JS', 'Art', 'Drawing', 'Canvas','Shapes'],
-    url: 'https://inkflow-workspace.vercel.app',
+    title: 'InkFlow - Collaborative Workspace for Creative Ones',
+    tags: ['Html', 'Css', 'JavaScript','Firebase', 'Sketch JS', 'Art', 'Drawing', 'Canvas'],
+    url: 'https://inkfloww.vercel.app',
   },
   {
     image: '/Elixpo Preview.png',
