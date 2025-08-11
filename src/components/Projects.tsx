@@ -1,25 +1,25 @@
 import { ArrowRight } from 'lucide-react';
 const projects = [
   {
-    image: '/InkFlow.png',
+    image: '/projects/inkflow.png',
     title: 'InkFlow | Whiteboard Canvas',
     tags: ['Html', 'Css', 'JavaScript','Firebase', 'Sketch JS', 'Art', 'Drawing', 'Canvas'],
     url: 'https://inkfloww.vercel.app',
   },
   {
-    image: '/Elixpo Preview.png',
+    image: '/projects/elixpoai.png',
     title: 'Elixpo AI - Text to Image Generator',
     tags: ['Html', 'Css', 'JavaScript', 'python', 'Firebase', 'Contributed as Frontend'],
     url: 'https://circuit-overtime.github.io/Elixpo_ai_pollinations/src/auth/',
   },
   {
-    image: '/Apple Preview.png',
+    image: '/projects/applevisionpro.png',
     title: 'Apple Vision Pro - 3D Animation',
     tags: ['Html', 'Css', 'JavaScript', 'Gsap', 'Animations', '3D', 'Model','Smooth Scrolling'],
-    url: 'https://ez-vivek.github.io/Vision-Pro-3D-Animation/',
+    url: 'https://inkflow.elixpo.com',
   },
   {
-    image: '/Redefine Preview.png',
+    image: '/projects/redefinegaming.png',
     title: 'Redefine Gaming - Award Website',
     tags: ['ReactJs', 'TailwindCss', 'Typescript', 'Gsap', 'Animations', 'Smooth Scrolling'],
     url: 'https://redefineawardgamingwebsite.vercel.app',

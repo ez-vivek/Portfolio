@@ -1,1 +1,1 @@
-<img src="/public/Portfolio Preview.png">
+<img src="/public/portfolio.png">

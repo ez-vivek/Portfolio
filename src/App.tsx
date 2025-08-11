@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Services from './components/Services';
+import Certificates from './components/Certificates';
 import Process from './components/Process';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -14,6 +15,7 @@ function App() {
       <Hero />     
       <Education/>
       <Projects />
+      <Certificates />
       <Services />
       <Process />
       <Contact/>
