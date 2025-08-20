@@ -4,7 +4,7 @@ const projects = [
     image: '/projects/inkflow.png',
     title: 'InkFlow | Whiteboard Canvas',
     tags: ['Html', 'Css', 'JavaScript','Firebase', 'Sketch JS', 'Art', 'Drawing', 'Canvas'],
-    url: 'https://inkfloww.vercel.app',
+    url: 'https://inkflowa.vercel.app',
   },
   {
     image: '/projects/elixpoai.png',
