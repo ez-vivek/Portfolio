@@ -24,15 +24,15 @@ export default function Contact() {
                 <i className="bi bi-github text-xl sm:text-2xl"></i>
                 <span className="sr-only">GitHub</span>
               </a>
-              <a href="https://www.linkedin.com/in/vivekwebdev06" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+              <a href="https://www.linkedin.com/in/viveksde06" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
                 <i className="bi bi-linkedin text-xl sm:text-2xl"></i>
                 <span className="sr-only">LinkedIn</span>
               </a>
-              <a href="https://www.instagram.com/vivek.webdev" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-400 transition-colors">
+              <a href="https://www.instagram.com/vivek.sde" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-400 transition-colors">
                 <i className="bi bi-instagram text-xl sm:text-2xl"></i>
                 <span className="sr-only">Instagram</span>
               </a>
-              <a href="https://x.com/vivek_webdev" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">
+              <a href="https://x.com/sde_vivek" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">
                 <i className="bi bi-twitter-x text-xl sm:text-2xl"></i>
                 <span className="sr-only">Twitter</span>
               </a>
