@@ -50,15 +50,15 @@ export default function Navbar() {
                             <i className="bi bi-github text-xl sm:text-2xl"></i>
                             <span className="sr-only">GitHub</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/ezvivek" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                        <a href="https://www.linkedin.com/in/ezmkdir" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
                             <i className="bi bi-linkedin text-xl sm:text-2xl"></i>
                             <span className="sr-only">LinkedIn</span>
                         </a>
-                        <a href="https://www.instagram.com/ez_vivek" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-400 transition-colors">
+                        <a href="https://www.instagram.com/ezmkdir" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-400 transition-colors">
                             <i className="bi bi-instagram text-xl sm:text-2xl"></i>
                             <span className="sr-only">Instagram</span>
                         </a>
-                        <a href="https://x.com/ez_vivek" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">
+                        <a href="https://x.com/ezmkdir" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">
                             <i className="bi bi-twitter-x text-xl sm:text-2xl"></i>
                             <span className="sr-only">Twitter</span>
                         </a>
